@@ -1,3 +1,4 @@
+
 # Hardhat Boilerplate
 
 This repository contains a sample project that you can use as the starting point
@@ -15,24 +16,31 @@ The first things you need to do are cloning this repository and installing its
 dependencies:
 
 ```sh
-git clone https://github.com/NomicFoundation/hardhat-boilerplate.git
-cd hardhat-boilerplate
+git clone https://github.com/Mohankotte123/Trustless-Real-Estate-Transactions.git
+cd Trustless-Real-Estate-Transactions
 npm install
 ```
 
-Once installed, let's run Hardhat's testing network:
 
+Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
+need to have [Coinbase Wallet](https://www.coinbase.com/wallet) or [Metamask](https://metamask.io) installed and listening to
+`localhost 8545`.
+## Deploying contract and Interacting with contract
+Navigate to contracts folder and copy copy the Real_estate.sol
+(I used Remix as a support) 
+so open remix IDE to compile the contract and deploy into local hardhat network.
+Now  run local hardhat network by following below commands
 ```sh
+cd Trustless-Real-Estate-Transactions
 npx hardhat node
 ```
-
-Then, on a new terminal, go to the repository's root folder and run this to
-deploy your contract:
-
+Now in Remix IDE compile the contract and select environment as Dev-Hardhat provider(This will connect to the local hardhat network)
+Deploy the contract and paste the deployed address in the (frontend/src/Header.js) 
+Now compile the contract again in hardaht setup for abi and byte code to interact with contract, for this follow below command
 ```sh
-npx hardhat run scripts/deploy.js --network localhost
+cd Trustless-Real-Estate-Transactions
+npx hardhat compile
 ```
-
 Finally, we can run the frontend with:
 
 ```sh
@@ -40,10 +48,15 @@ cd frontend
 npm install
 npm start
 ```
+Now open Metamask extension and connect to localHost.
+now import some accounts from local hardhat network into metamask for interacting with contract
 
-Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
-need to have [Coinbase Wallet](https://www.coinbase.com/wallet) or [Metamask](https://metamask.io) installed and listening to
-`localhost 8545`.
+## Done!!!!!
+
+You are to Ready to interact with contract
+
+
+
 
 ## User Guide
 
