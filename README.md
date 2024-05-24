@@ -21,10 +21,6 @@ cd Trustless-Real-Estate-Transactions
 npm install
 ```
 
-
-Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
-need to have [Coinbase Wallet](https://www.coinbase.com/wallet) or [Metamask](https://metamask.io) installed and listening to
-`localhost 8545`.
 ## Deploying contract and Interacting with contract
 Navigate to contracts folder and copy copy the Real_estate.sol
 (I used Remix as a support) 
@@ -55,7 +51,9 @@ now import some accounts from local hardhat network into metamask for interactin
 
 You are to Ready to interact with contract
 
-
+Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
+need to have [Coinbase Wallet](https://www.coinbase.com/wallet) or [Metamask](https://metamask.io) installed and listening to
+`localhost 8545`.
 
 
 ## User Guide
